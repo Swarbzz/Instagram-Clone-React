@@ -3,7 +3,7 @@ let graphqlHTTP = require("express-graphql");
 let { buildSchema } = require("graphql");
 let cors = require("cors");
 
-let schema = buildSchema(
+let schema = buildSchema(`
   type User {
     id: String!
     nickname: String!
@@ -20,12 +20,12 @@ let schema = buildSchema(
     post(user_id: String, post_id: String) : Post!
     posts(user_id: String) : [Post]
   }
-);
+`);
 
 let userslist = {
   a: {
     id: "a",
-    nicknake: "George",
+    nickname: "George",
     avatar: "https://pbs.twimg.com/profile_images/739024152187797504/xWAHF_Yu_400x400.jpg"
   }
 };

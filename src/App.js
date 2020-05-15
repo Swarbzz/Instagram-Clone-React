@@ -6,40 +6,14 @@ import Post from './components/Post';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <Header />
-        <div>
-          <Post />
-        </div>
+        <section className="App-main">
+          <Post nickname="George" avatar="https://pbs.twimg.com/profile_images/739024152187797504/xWAHF_Yu_400x400.jpg" caption="Headshot" image="https://s3-eu-west-1.amazonaws.com/images.castcall.blue-compass.com/portfolioraw/1568/1568547.jpg" />
+          {/* add more posts here */}
+        </section>
       </div>
     );
   }
 }
 export default App;
-
-// import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;

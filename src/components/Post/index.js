@@ -20,7 +20,7 @@ class Post extends Component {
         </div>
       </div>
       <div className="Post-caption">
-        <strong>George</strong> Drinking away quarantine!
+        <strong>George</strong> Headshot
       </div>
     </article>;
   }

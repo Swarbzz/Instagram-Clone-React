@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import "./Post.css";
+
 class Post extends Component {
   render() {
     return <article className="Post" ref="Post">
       <header>
         <div className="Post-user">
           <div className="Post-user-avatar">
-            <img src="../../ME.jpg" alt="George" />
+            <img src="https://pbs.twimg.com/profile_images/739024152187797504/xWAHF_Yu_400x400.jpg" alt="George" />
           </div>
           <div className="Post-user-nickname">
             <span>George</span>
@@ -14,7 +16,7 @@ class Post extends Component {
       </header>
       <div className="Post-image">
         <div className="Post-image-bg">
-          <img alt="Me drinking" scr="../../Me drinking.jpg" />
+          <img src="https://s3-eu-west-1.amazonaws.com/images.castcall.blue-compass.com/portfolioraw/1568/1568547.jpg" alt="Headshot"  />
         </div>
       </div>
       <div className="Post-caption">

@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Post from './components/Post';
+import ApolloClient from 'apollo-boost';
+
+const client = new ApolloClient({
+  uri : "http://localhost:4000"
+});
 
 class App extends Component {
   render() {
